@@ -1,0 +1,18 @@
+:root{
+    --clr-primary-300 : hsl(333, 80%, 67%);
+    --clr-primary-700 :hsl(300, 43%, 22%);
+
+    --clr-netral-white : hsl(0, 0%, 100%);
+    --clr-netral-100: hsl(300, 24%, 96%);
+    --clr-netral-200:hsl(303, 10%, 53%);
+
+    --font-fam-main:'Spartan', sans-serif;
+    --font-tiny: .82rem;
+    --font-normal:.97rem;
+    --font-big: 2rem;
+    --br :0.4rem;
+
+    @media (min-width:50em) {
+        --font-big: 3rem;
+    }
+}
