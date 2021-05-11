@@ -3,7 +3,7 @@
   --clr-primary-700:hsl(300, 43%, 22%);
   --clr-netral-white: hsl(0, 0%, 100%);
   --clr-netral-100: hsl(300, 24%, 96%);
-  --clr-netral-200:hsl(303, 10%, 53%);
+  --clr-netral-200:hsl(0, 1%, 15%);
   --font-fam-main:'Spartan', sans-serif;
   --font-tiny: .82rem;
   --font-normal:.97rem;
@@ -105,6 +105,16 @@ body {
   font-size: var(--font-tiny);
   padding-top: 5rem;
   text-align: center;
+  background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+  background-size: 150% 80%;
+}
+
+@media (max-width: 53rem) {
+  body {
+    background-size: 180% 70%;
+  }
 }
 
 h1 {
@@ -131,6 +141,8 @@ h1 {
 .lead {
   font-size: var(--font-normal);
   color: var(--clr-netral-200);
+  font-weight: 500;
+  font-style: italic;
 }
 
 main {

@@ -3,6 +3,18 @@ body {
   font-size: var(--font-tiny);
   padding-top: 5rem;
   text-align: center;
+  background-image:
+   url(../images/bg-pattern-top-desktop.svg),
+   url(../images/bg-pattern-bottom-desktop.svg)
+  ;
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+  background-size: 150% 80%;
+
+  @media (max-width:53rem) {
+    background-size: 180% 70%;
+
+  }
 }
 
 h1 {
@@ -27,6 +39,8 @@ h1 {
 .lead {
   font-size: var(--font-normal);
   color: var(--clr-netral-200);
+  font-weight: 500;
+  font-style: italic;
 }
 
 main {
@@ -46,6 +60,7 @@ main {
   .ratings {
     grid-column: 2/3;
     align-self: center;
+    
   }
 
   .quotes {
